@@ -1,0 +1,923 @@
+/* ==================================================
+   LAYOUT DASHBOARD
+================================================== */
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.dashboard-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+/* ==================================================
+   SIDEBAR
+================================================== */
+
+.sidebar {
+    width: 270px;
+    min-width: 270px;
+
+    background: var(--primary);
+
+    height: 100vh;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================================================
+   PARTE SUPERIOR
+================================================== */
+
+.sidebar-top {
+    flex: 1;
+}
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.sidebar-header {
+    padding: 18px 20px;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.sidebar-logo {
+    width: 75px;
+    height: auto;
+}
+
+/* ==================================================
+   MENÚ
+================================================== */
+
+.sidebar-nav {
+    padding: 10px 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 18px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: .25s;
+}
+
+.sidebar-link:hover {
+    background: rgba(255,255,255,.08);
+}
+
+.sidebar-link.active {
+    background: var(--hover);
+
+    color: var(--primary);
+
+    font-weight: 700;
+}
+
+.sidebar-icon {
+    width: 22px;
+
+    text-align: center;
+}
+
+/* ==================================================
+   PARTE INFERIOR
+================================================== */
+
+.sidebar-bottom {
+    padding: 15px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    background: var(--primary);
+
+    flex-shrink: 0;
+}
+
+/* ==================================================
+   USUARIO
+================================================== */
+
+.sidebar-user-card {
+    background: rgba(255,255,255,.06);
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.sidebar-user-avatar {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 12px;
+
+    border-radius: 50%;
+
+    background: var(--hover);
+
+    color: var(--primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.3rem;
+}
+
+.sidebar-user-card h4 {
+    margin: 0 0 5px;
+
+    color: white;
+
+    font-size: 1rem;
+}
+
+.sidebar-user-card span {
+    color: rgba(255,255,255,.7);
+
+    font-size: .9rem;
+}
+
+/* ==================================================
+   BOTÓN LOGOUT
+================================================== */
+
+.sidebar-logout-btn {
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    font-size: .95rem;
+
+    transition: .25s;
+}
+
+.sidebar-logout-btn:hover {
+    background: var(--hover);
+
+    color: var(--primary);
+}
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .sidebar {
+
+        width: 90px;
+        min-width: 90px;
+    }
+
+    /* LOGO */
+
+    .sidebar-logo {
+
+        width: 50px;
+    }
+
+    /* MENÚ */
+
+    .sidebar-link {
+
+        justify-content: center;
+
+        padding: 16px 10px;
+    }
+
+    .sidebar-link span {
+
+        display: none;
+    }
+
+    .sidebar-icon {
+
+        margin: 0;
+
+        font-size: 1.2rem;
+    }
+
+    /* TARJETA USUARIO */
+
+    .sidebar-user-card {
+
+        padding: 15px 10px;
+    }
+
+    .sidebar-user-card h4,
+    .sidebar-user-card span {
+
+        display: none;
+    }
+
+    .sidebar-user-avatar {
+
+        margin-bottom: 0;
+    }
+
+    /* CERRAR SESIÓN */
+
+    .sidebar-logout {
+
+        justify-content: center;
+    }
+
+    .sidebar-logout span {
+
+        display: none;
+    }
+
+    /* CONTENIDO */
+
+    .dashboard-content {
+
+        padding: 20px;
+    }
+}
+
+
+/* ==================================================
+   MÓVIL
+================================================== */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+
+        width: 70px;
+        min-width: 70px;
+    }
+
+    .sidebar-logo {
+
+        width: 40px;
+    }
+
+    .sidebar-link {
+
+        padding: 14px 5px;
+    }
+
+    .sidebar-icon {
+
+        font-size: 1rem;
+    }
+
+    .sidebar-user-avatar {
+
+        width: 45px;
+        height: 45px;
+    }
+
+    .dashboard-content {
+
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   TOPBAR WRAPPER
+================================================== */
+
+.topbar-wrapper {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+/* ==================================================
+   TOPBAR
+================================================== */
+
+.topbar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: var(--primary);
+
+    padding: 14px 22px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .10);
+}
+
+/* ==================================================
+   MENU
+================================================== */
+
+.topbar-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.topbar-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-size: .95rem;
+
+    font-weight: 600;
+
+    transition: .25s ease;
+}
+
+.topbar-link i {
+
+    font-size: 1rem;
+}
+
+.topbar-link:hover {
+
+    background: var(--success);
+
+    color: white;
+}
+
+.topbar-link.active {
+
+    background: var(--success);
+
+    color: white;
+}
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+.topbar-search {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 220px;
+
+    padding: 12px 16px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.15);
+
+    color: white;
+}
+
+.topbar-search i {
+
+    font-size: 1rem;
+
+    opacity: .9;
+}
+
+.topbar-search input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: .95rem;
+}
+
+.topbar-search input::placeholder {
+
+    color: rgba(255,255,255,.75);
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .topbar-wrapper {
+
+        padding: 0 15px;
+    }
+
+    .topbar {
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .topbar-search {
+
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* ==================================================
+   DASHBOARD HOME
+================================================== */
+
+.dashboard-home {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ==================================================
+   BIENVENIDA
+================================================== */
+
+.welcome-card {
+    background: white;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+.welcome-title {
+    color: var(--primary);
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    color: #64748B;
+
+    margin: 0;
+
+    line-height: 1.7;
+}
+
+/* ==================================================
+   FILA PRINCIPAL
+================================================== */
+
+.dashboard-row {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+}
+
+/* ==================================================
+   TARJETAS
+================================================== */
+
+.dashboard-card {
+    background: white;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    transition: .3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.05);
+}
+
+.dashboard-card-title {
+    color: var(--primary);
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+/* ==================================================
+   ACTIVIDAD
+================================================== */
+
+.activity-items {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.activity-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.activity-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: rgba(0,184,217,.10);
+
+    color: var(--secondary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+}
+
+.activity-item strong {
+    display: block;
+
+    color: var(--primary);
+
+    margin-bottom: 4px;
+}
+
+.activity-item p {
+    margin: 0;
+
+    color: #64748B;
+
+    font-size: .92rem;
+}
+
+/* ==================================================
+   ÚLTIMAS PUBLICACIONES
+================================================== */
+
+.publication-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.publication-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 14px;
+
+    border-radius: 14px;
+
+    background: #F8FAFC;
+
+    transition: .3s ease;
+}
+
+.publication-item:hover {
+    background: #EEF2F7;
+}
+
+.publication-item i {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    background: rgba(0,184,217,.10);
+
+    color: var(--secondary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publication-item span {
+    color: var(--primary);
+
+    font-weight: 600;
+}
+
+/* ==================================================
+   TAMAÑOS
+================================================== */
+
+.dashboard-large {
+    min-height: 320px;
+}
+
+.dashboard-small {
+    min-height: 320px;
+}
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .dashboard-row {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-large,
+    .dashboard-small {
+        min-height: auto;
+    }
+
+    .dashboard-content {
+        padding: 20px;
+    }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .dashboard-content {
+        padding: 15px;
+    }
+
+    .welcome-card {
+        padding: 22px;
+    }
+
+    .welcome-title {
+        font-size: 1.5rem;
+    }
+
+    .dashboard-card {
+        padding: 20px;
+    }
+
+    .activity-item {
+        align-items: flex-start;
+    }
+
+    .activity-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .publication-item {
+        padding: 10px 12px;
+    }
+}
+
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.dashboard-footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+    border-top: 1px solid #E5E7EB;
+
+    background: transparent;
+}
+
+.dashboard-footer p {
+
+    margin: 0;
+
+    text-align: center;
+
+    color: #64748B;
+
+    font-size: .95rem;
+
+    font-weight: 500;
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .dashboard-footer {
+
+        padding: 18px 15px;
+    }
+
+    .dashboard-footer p {
+
+        font-size: .85rem;
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   OFFCANVAS RESPONSIVE
+================================================== */
+
+.mobile-menu-btn {
+
+    display: none;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--primary);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 1.1rem;
+}
+
+.desktop-sidebar {
+
+    display: block;
+}
+
+/* ==================================================
+   TABLET Y MÓVIL
+================================================== */
+
+@media (max-width: 992px) {
+
+    .desktop-sidebar {
+
+        display: none;
+    }
+
+    .mobile-menu-btn {
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .offcanvas {
+
+        width: 280px;
+    }
+
+    .offcanvas .sidebar {
+
+        display: flex;
+
+        width: 100%;
+
+        min-width: 100%;
+
+        height: 100%;
+    }
+
+    .topbar {
+
+        justify-content: center;
+    }
+}

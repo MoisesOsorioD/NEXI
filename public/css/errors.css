@@ -1,0 +1,100 @@
+/* ERROR PAGES */
+.error-container {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.error-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(15, 76, 129, 0.2);
+    padding: 60px 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.error-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.error-description {
+    font-size: 1.1rem;
+    color: #6B7280;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.error-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ===================================
+   NAVBAR USER INFO
+=================================== */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-user-name {
+    color: var(--primary);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.navbar-user-role {
+    color: #6B7280;
+    font-size: .85rem;
+}
+
+
+
+
+

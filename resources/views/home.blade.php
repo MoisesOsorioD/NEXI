@@ -110,7 +110,7 @@
 <!-- GRADIENT SECTION - USO CASOS -->
 <section class="use-cases-section py-5">
     <div class="container">
-        <h2 class="section-title text-white mb-5 text-center">Cómo NEXI te beneficia</h2>
+        <h2 class="section-title text-dark mb-5 text-center">Cómo NEXI te beneficia</h2>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">

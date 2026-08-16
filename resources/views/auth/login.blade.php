@@ -14,7 +14,7 @@
             <div class="auth-info-content">
 
                 <a href="/">
-                    <img src="{{ asset('img/logito.svg') }}"
+                    <img src="{{ asset('img/ImagoTipoNexi.svg') }}"
                          alt="NEXI"
                          class="auth-logo">
                 </a>

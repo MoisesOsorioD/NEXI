@@ -12,7 +12,7 @@
         <div class="register-left">
 
             <a href="/" class="register-logo-link">
-                <img src="{{ asset('img/logito.svg') }}"
+                <img src="{{ asset('img/ImagoTipoNexi.svg') }}"
                      alt="NEXI"
                      class="register-logo">
             </a>

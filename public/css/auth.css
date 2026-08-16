@@ -27,8 +27,8 @@
 
 .register-left {
     width: 40%;
-    background: var(--secondary);
-    padding: 60px 50px;
+    background: var(--background);
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@
 }
 
 .register-logo {
-    width: 200px;
+    width: 250px;
     max-width: 100%;
     height: auto;
     margin-bottom: 30px;
@@ -61,7 +61,7 @@
 }
 
 .register-left p {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.1rem;
     line-height: 1.9;
     margin: 0;
@@ -286,8 +286,8 @@
 
 .auth-info {
     width: 40%;
-    background: var(--secondary);
-    padding: 60px 50px;
+    background: var(--background);
+    padding: 30px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,8 +299,8 @@
 }
 
 .auth-logo {
-    width: 200px !important;
-    max-width: 180px !important;
+    width: 250px !important;
+    max-width: 250px !important;
     height: auto !important;
     display: block;
     margin: 0 auto 30px;
@@ -312,14 +312,14 @@
 }
 
 .auth-info-title {
-    color: white;
+    color: rgb(23, 20, 20);
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
 
 .auth-info-text {
-    color: white;
+    color: rgb(44, 40, 40);
     line-height: 1.9;
     font-size: 1rem;
     margin: 0;

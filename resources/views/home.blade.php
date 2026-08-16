@@ -22,7 +22,7 @@
 
         <div class="hero-brand">
             <img
-                src="{{ asset('img/logito.svg') }}"
+                src="{{ asset('img/ImagoTipoNexi.svg') }}"
                 alt="NEXI"
                 class="hero-logo">
         </div>

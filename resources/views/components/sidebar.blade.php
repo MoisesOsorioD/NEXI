@@ -11,7 +11,7 @@
             >
 
                 <img
-                    src="{{ asset('img/logito.svg') }}"
+                    src="{{ asset('img/Logo Nexi blanco-06.svg') }}"
                     alt="NEXI"
                     class="sidebar-logo"
                 >
@@ -38,10 +38,14 @@
                 <span>Publicaciones</span>
             </a>
 
-            <a href="#" class="sidebar-link">
-                <i class="fa-solid fa-comments sidebar-icon"></i>
-                <span>Chat</span>
-            </a>
+            <a href="{{ route('supplier.chat') }}"
+   class="sidebar-link {{ request()->routeIs('supplier.chat') ? 'active' : '' }}">
+
+    <i class="fa-solid fa-comments"></i>
+
+    <span>Chat</span>
+
+</a>
 
             <a href="#" class="sidebar-link">
                 <i class="fa-solid fa-building sidebar-icon"></i>

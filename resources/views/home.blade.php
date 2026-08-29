@@ -50,12 +50,12 @@
                 <div class="stats-row mt-5">
 
                     <div class="stat">
-                        <h5 class="stat-number">100+</h5>
+                        <h5 class="stat-number">50+</h5>
                         <p class="stat-label">Proveedores</p>
                     </div>
 
                     <div class="stat">
-                        <h5 class="stat-number">500+</h5>
+                        <h5 class="stat-number">100+</h5>
                         <p class="stat-label">Emprendedores</p>
                     </div>
 

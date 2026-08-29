@@ -36,6 +36,15 @@ Route::middleware(['auth', 'role:supplier'])
             [SupplierDashboardController::class, 'index']
         )->name('supplier.dashboard');
 
+
+        // Chat
+Route::get(
+    '/chat',
+    function () {
+        return view('dashboard.supplier.chat');
+    }
+)->name('supplier.chat');
+
         // Publicaciones
         Route::get(
             '/publicaciones',
@@ -82,11 +91,38 @@ Route::middleware(['auth', 'role:supplier'])
 
 
 // Dashboard Emprendedor
+// Dashboard Emprendedor
 Route::get('/dashboard/emprendedor', function () {
     return view('dashboard.entrepreneur.index');
 })
 ->middleware(['auth', 'role:entrepreneur'])
 ->name('entrepreneur.dashboard');
+
+
+// Publicaciones y servicios - Emprendedor
+Route::get('/dashboard/emprendedor/publicaciones-servicios', function () {
+    return view('dashboard.entrepreneur.publications');
+})
+->middleware(['auth', 'role:entrepreneur'])
+->name('entrepreneur.publications.index');
+
+// Comparar proveedores - Emprendedor
+Route::get('/dashboard/emprendedor/comparar', function () {
+    return view('dashboard.entrepreneur.compare');
+})
+->middleware(['auth', 'role:entrepreneur'])
+->name('entrepreneur.compare');
+
+
+// Buscar proveedores
+Route::get(
+    '/dashboard/emprendedor/proveedores',
+    function () {
+        return view('dashboard.entrepreneur.providers.index');
+    }
+)
+->middleware(['auth', 'role:entrepreneur'])
+->name('entrepreneur.providers.index');
 
 
 // Logout

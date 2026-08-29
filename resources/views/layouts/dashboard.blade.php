@@ -32,24 +32,40 @@
     {{-- SIDEBAR ESCRITORIO --}}
     <div class="desktop-sidebar">
 
+    @if(auth()->user()->role === 'entrepreneur')
+
+        <x-entrepreneur-sidebar />
+
+    @else
+
         <x-sidebar />
 
-    </div>
+    @endif
+
+</div>
 
     {{-- SIDEBAR MÓVIL --}}
     <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="mobileSidebar"
-    >
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    id="mobileSidebar"
+>
 
-        <div class="offcanvas-body p-0">
+    <div class="offcanvas-body p-0">
+
+        @if(auth()->user()->role === 'entrepreneur')
+
+            <x-entrepreneur-sidebar />
+
+        @else
 
             <x-sidebar />
 
-        </div>
+        @endif
 
     </div>
+
+</div>
 
     <div class="dashboard-main">
 

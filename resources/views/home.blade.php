@@ -38,7 +38,7 @@
                 </h1>
 
                 <p class="hero-description">
-                    NEXI es una plataforma que une emprendedores,
+                    NEXI es una aplicación web que une emprendedores,
                     microempresas y proveedores de productos,
                     materias primas y servicios en un solo lugar.
                 </p>
